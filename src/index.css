@@ -1,1 +1,9 @@
-
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./backg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

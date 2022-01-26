@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Login({ user, setUser }) {
   const [userName, setUserName] = useState("");
@@ -28,32 +29,56 @@ function Login({ user, setUser }) {
   };
 
   return (
-    <>
-      <h1 className="text">Login</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="user" className="form">
-          Username:
-        </label>
-        <input
-          type="text"
-          name="user"
-          value={userName}
-          onChange={handleUserName}
-        />
+    <div className="App">
+      <div className="container">
+        <h1 className="text">Login</h1>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="user" className="form">
+            Username:
+          </label>
+          <input
+            type="text"
+            name="user"
+            value={userName}
+            onChange={handleUserName}
+          />
 
-        <label htmlFor="password" className="form">
-          User:
-        </label>
-        <input
-          type="password"
-          name="password"
-          value={password}
-          onChange={handlePassword}
-        />
+          <label htmlFor="password" className="form">
+            User:
+          </label>
+          <input
+            type="password"
+            name="password"
+            value={password}
+            onChange={handlePassword}
+          />
 
-        <input type="submit" value="Submit" className="submitbtn" />
-      </form>
-    </>
+          <input
+            style={{ marginBottom: "4rem"}}
+            type="submit"
+            value="Submit"
+            className="submitbtn"
+            onClick={(event) =>
+              (window.location.href = "http://localhost:3000/profile")
+            }
+          />
+          <br />
+          <Link
+            style={{
+              border: "solid 1px wheat",
+              borderRadius: "30px",
+              paddingTop: "0.5rem",
+              paddingLeft: "1rem",
+              paddingRight: "1rem",
+            }}
+            className="linkBut"
+            to="/"
+          >
+            Back to home
+          </Link>
+        </form>
+      </div>
+    </div>
   );
 }
 

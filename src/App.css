@@ -68,3 +68,14 @@
 .submitbtn:hover {
   background: rgb(182, 206, 238);
 }
+
+.linkBut {
+  text-decoration: none;
+  color: wheat;
+  font-family: fantasy;
+  font-size: 1.5rem;
+}
+
+.linkBut:hover {
+  color: tomato;
+}

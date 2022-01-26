@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Register() {
   const [user, setUser] = useState("");
@@ -29,30 +30,47 @@ function Register() {
   };
 
   return (
-    <div>
-      <h1 className="text">Register</h1>
-      <form onSubmit={submitForm}>
-        <label htmlFor="user" className="form">
-          Username:{" "}
-        </label>
-        <input
-          type="text"
-          name="user"
-          value={user}
-          onChange={handleUserChange}
-        ></input>
+    <div className="App">
+      <div className="container">
+        <h1 className="text">Register</h1>
+        <form onSubmit={submitForm}>
+          <label htmlFor="user" className="form">
+            Username:{" "}
+          </label>
+          <input
+            type="text"
+            name="user"
+            value={user}
+            onChange={handleUserChange}
+          ></input>
 
-        <label htmlFor="password" className="form">
-          Password:{" "}
-        </label>
-        <input
-          type="password"
-          name="password"
-          value={password}
-          onChange={handlePasswordChange}
-        ></input>
-        <input type="submit" value="Submit" className="submitbtn"></input>
-      </form>
+          <label htmlFor="password" className="form">
+            Password:{" "}
+          </label>
+          <input
+            type="password"
+            name="password"
+            value={password}
+            onChange={handlePasswordChange}
+          ></input>
+          <input
+          style={{marginBottom:"4rem"}}
+            type="submit"
+            value="Submit"
+            className="submitbtn"
+            onClick={(event) =>
+              (window.location.href = "http://localhost:3000/login")
+            }
+          ></input>
+          <Link style={{
+              border: "solid 1px wheat",
+              borderRadius: "30px",
+              paddingTop: "0.5rem",
+              paddingLeft: "1rem",
+              paddingRight: "1rem",
+            }} className="linkBut" to="/">Back to home</Link> |{" "}
+        </form>
+      </div>
     </div>
   );
 }

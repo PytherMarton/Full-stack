@@ -9,7 +9,7 @@ function Login() {
 
   const handleUserName = (e) => setUserName(e.target.value);
   const handlePassword = (e) => setPassword(e.target.value);
-  const prof = user ? window.location.href = "http://localhost:3000/profile" : undefined;
+  const prof = user ? window.location.href = "https://best-friend-finder-d0gbr33ds31415926535.netlify.app/" : undefined;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -36,7 +36,7 @@ function Login() {
  
   return (
     <div className="App">
-      <div className="container">
+      <div className="reglog">
         <h1 className="text">Login</h1>
         <form onSubmit={handleSubmit}>
           <label htmlFor="user" className="form">

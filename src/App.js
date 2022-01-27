@@ -21,11 +21,12 @@ function App() {
         {/* <Link className="linkBut" to="/profile">Profile</Link> */}
       </nav>
         <div className="text">
-          <h1 className="animate-charcter">Welcome to Magic Card Finder!</h1>
-          <p>- Search for your favourite Magic cards.</p>
-          <p>- Create your own deck.</p>
-          <p>- Extend your collection.</p>
-          <p>- Create multiple decks.</p>
+          <h1 className="animate-charcter">Welcome to!<br/> -- Best Friend Finder -- </h1>
+          <p>- Find a new Best Friend</p>
+          <p>- Search between various of dog breeds.</p>
+          <p>- Get to know them better.</p>
+          <p>- And get inspired!</p>
+          <h2><Link className="linkBut" to="/register">Sign up today</Link></h2>
         </div>
       </div>
     </div>

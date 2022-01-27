@@ -31,7 +31,7 @@ function Register() {
 
   return (
     <div className="App">
-      <div className="container">
+      <div className="reglog">
         <h1 className="text">Register</h1>
         <form onSubmit={submitForm}>
           <label htmlFor="user" className="form">

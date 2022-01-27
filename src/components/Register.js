@@ -58,7 +58,7 @@ function Register() {
             type="submit"
             value="Submit"
             className="submitbtn"
-            onClick={event =>  window.location.href='https://best-friend-finder.netlify.app/login'}
+            onClick={event =>  window.location.href='https://best-friend-finder.netlify.app'}
           ></input>
           <Link style={{
               border: "solid 1px wheat",

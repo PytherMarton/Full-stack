@@ -17,8 +17,8 @@ function App() {
         }}
       >
         <Link className="linkBut" to="/login">Login</Link> |{" "}
-        <Link className="linkBut" to="/register">Register</Link> |{" "}
-        <Link className="linkBut" to="/profile">Profile</Link>
+        <Link className="linkBut" to="/register">Register</Link>
+        {/* <Link className="linkBut" to="/profile">Profile</Link> */}
       </nav>
         <div className="text">
           <h1 className="animate-charcter">Welcome to Magic Card Finder!</h1>

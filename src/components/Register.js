@@ -58,9 +58,7 @@ function Register() {
             type="submit"
             value="Submit"
             className="submitbtn"
-            onClick={(event) =>
-              (window.location.href = "http://localhost:3000/login")
-            }
+            onClick={event =>  window.location.href='http://localhost:3000/login'}
           ></input>
           <Link style={{
               border: "solid 1px wheat",
